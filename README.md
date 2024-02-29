@@ -15,3 +15,4 @@
 - [x] [Localization](src/components/localization)
 - [x] [Component Driven Development](src/components/component-driven-development)
 - [x] [Micro Frontend](src/components/micro-frontend)
+- [x] [React - Recursive Component](src/components/recursive-component)
