@@ -14,3 +14,6 @@ Follow this guide: https://lingui.dev/tutorials/setup-react
 (use "yarn intl:extract" to update catalogs with new messages)
 (use "yarn intl:compile" to compile catalogs for production)
 ```
+
+## Additional Reading
+- https://lingui.dev/
