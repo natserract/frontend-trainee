@@ -7,9 +7,6 @@ Practical Tasks:
   - https://medium.com/codex/resilient-fetch-requests-in-javascript-with-abortcontroller-a-guide-with-react-examples-573dba8a3758
 - Redux RTQ
 
-## Question
-1. Untuk di role Sr ini, kira2 nantinya tanggung jawab dan ekspetasi perusahaan itu seperti apa ya?
-
 ## Teory:
 ### React Lifecycle:
 componentDidMount():  Setara dengan useEffect(() => {}, []). Larik ketergantungan kosong [] memastikan bahwa efek hanya berjalan sekali, setelah render awal.
