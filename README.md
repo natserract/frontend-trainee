@@ -1,11 +1,15 @@
 # React Trainee
 
 Practical Tasks:
-- React - Higher Order Component ✅
-- React - Context ✅
+- React - Higher Order Component
+- React - Context
 - Data Fetching: Async Await, parallelism, Abort Controller
   - https://medium.com/codex/resilient-fetch-requests-in-javascript-with-abortcontroller-a-guide-with-react-examples-573dba8a3758
-- Redux RTQ
+- Event Emitter
+- React - Merge Refs
+- React Router (Latest Version)
+- Realtime Communication
+- State Machine
 
 ## Teory:
 ### React Lifecycle:
