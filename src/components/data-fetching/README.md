@@ -35,3 +35,7 @@ const query = useQuery('todos', () => {
 })
 ```
 
+## Additional Reading
+- https://dev.to/swarnaliroy94/methods-of-promise-all-any-finally-o2e
+- https://medium.com/codex/resilient-fetch-requests-in-javascript-with-abortcontroller-a-guide-with-react-examples-573dba8a3758
+

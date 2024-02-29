@@ -1,4 +1,4 @@
-import {useLoaderData, useParams, Await, defer } from "react-router-dom";
+import {useLoaderData, useParams, Await } from "react-router-dom";
 import {LoaderFunctionArgs} from "@remix-run/router/utils";
 import { Suspense } from 'react'
 
