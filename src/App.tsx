@@ -5,6 +5,7 @@ import {DataFetchingPlayground} from "./components/data-fetching/playground";
 import EventEmitterPlayground from "./components/event-emitter/playground";
 import StateMachinePlayground from "./components/state-machine/playground";
 import ReactRouterPlayground from "./components/react-router/playground";
+import LocalizationPlayground from "./components/localization/playground";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <EventEmitterPlayground />
         <StateMachinePlayground />
         <ReactRouterPlayground />
+        <LocalizationPlayground />
     </>
   )
 }

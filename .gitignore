@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# i18n
+src/components/localization/locale/locales/_build/
+src/components/localization/locale/locales/**/*.js
