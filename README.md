@@ -12,4 +12,4 @@
 - [x] [State Machine](src/components/state-machine)
 - [x] [Redux](src/components/redux)
 - [x] [Optimization](src/components/optimization)
-- [x] [Localization]()
+- [x] [Localization](src/components/localization)
