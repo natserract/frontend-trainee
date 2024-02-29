@@ -13,6 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/localization/inner-app.tsx:12
+#: src/components/localization/inner-app.tsx:11
 msgid "Fried Chicken"
 msgstr ""
