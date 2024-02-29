@@ -10,7 +10,7 @@
 - [x] [React Router (Latest Version)](src/components/react-router)
 - [x] [Realtime Communication](src/components/realtime-communication)
 - [x] [State Machine](src/components/state-machine)
-- [x] [Redux](src/components/redux)
+- [x] [Redux (RTK Query)](src/components/redux)
 - [x] [Optimization](src/components/optimization)
 - [x] [Localization](src/components/localization)
 - [x] [Component Driven Development](src/components/component-driven-development)
