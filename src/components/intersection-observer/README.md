@@ -31,7 +31,7 @@ IntersectionObserver is a powerful JavaScript API that allows you to efficiently
 14. Sticky Elements: IntersectionObserver can help create sticky elements that remain fixed to a specific position until a certain condition is met. By observing when a particular element exits the viewport, you can trigger the "sticky" behavior and affix the element to the screen, enhancing the user experience and providing persistent navigation or important information.
 
 ## Different `observer.unobserve()` vs `observer.disconnect()`
-1. observer.unobserve(target): This method is used to stop observing a specific target element. When you call unobserve(target) on an IntersectionObserver instance, it removes the specified target element from the observation list. The observer will no longer trigger intersection events for that element. This method is useful when you want to stop observing a specific element while continuing to observe others.
+1. observer.unobserve(target): This method is used to stop observing a specific target element. When you call unobserve(target) on an IntersectionObserver instance, it removes the specified target element from the observation list. The observer will no longer trigger intersection events for that element. This method is useful when you want to stop observing a specific element while continuing to observe others. When you call observer.unobserve(targetElement), the observer will stop monitoring the specified targetElement.
 
 2. observer.disconnect(): This method is used to completely disconnect the IntersectionObserver instance from all target elements. When you call disconnect() on an IntersectionObserver instance, it stops observing all target elements and clears the observation list. The observer will no longer trigger intersection events for any element. This method is useful when you want to stop observing all elements and release any resources associated with the IntersectionObserver instance.
 
@@ -66,3 +66,13 @@ function Image(props) {
 ```
 
 This avoids creating an expensive object until it's truly needed for the first time. If you use Flow or TypeScript, you can also give `getObserver()` a non-nullable type for convenience.
+
+
+## Some misconception concept
+the `IntersectionObserver` specification does not provide a direct way to check the values of observed entries or to retrieve a list of observed targets. **The IntersectionObserver API is designed to provide notifications when observed targets intersect or stop intersecting with the root element.**
+
+When you call observer.observe(targetElement), the observer will start monitoring the specified targetElement for intersection changes. The observer's callback function will be triggered whenever the intersection status of the observed element changes.
+
+On the other hand, when you call observer.unobserve(targetElement), the observer will stop monitoring the specified targetElement. The observer's callback will no longer be triggered for that particular element.
+
+If you need to keep track of the observed entries or their intersection status, you can maintain your own data structure or variables within your code. For example, you can use an array or a map to store the observed elements and their corresponding intersection status. Then, within the callback function, you can update the values in your data structure accordingly.
