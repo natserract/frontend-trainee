@@ -17,3 +17,12 @@ Polymorphic components in React provide several benefits and use cases. Here are
 5. Component Composition: Polymorphic components can be composed with other components to build more complex UI structures. They serve as building blocks that can be combined and nested to create reusable and flexible UI patterns.
 
 6. API Design: Polymorphic components allow you to design APIs that are more intuitive and expressive. By choosing appropriate prop names and using common patterns, you can create components that are easier to understand and use, improving the developer experience.
+
+## Example
+```tsx
+<PolymorphicComponent as="h1">Heading</PolymorphicComponent>
+
+<PolymorphicComponent as="p">Paragraph</PolymorphicComponent>
+
+<PolymorphicComponent as="button" ref={ref}>Click me</PolymorphicComponent>
+```
