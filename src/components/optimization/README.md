@@ -13,4 +13,5 @@
 - Server Side Rendering/SSG:
 
 ## Additional Reading
-- RxDB (Reactive Database), Client-side reactive database library https://rxdb.info/
+- https://natserract.vercel.app/post/react-optimization
+- Caching - RxDB (Reactive Database), Client-side reactive database library https://rxdb.info/
