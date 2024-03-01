@@ -1,4 +1,4 @@
-## React Lifecycle:
+## React Lifecycle (Functional Component):
 componentDidMount():  Setara dengan useEffect(() => {}, []). Larik ketergantungan kosong [] memastikan bahwa efek hanya berjalan sekali, setelah render awal.
 
 componentDidUpdate(): Setara dengan useEffect(() => {}, [value]). Efek akan dipicu setiap kali nilai ketergantungan berubah.
