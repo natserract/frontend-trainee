@@ -68,7 +68,7 @@ function Image(props) {
 This avoids creating an expensive object until it's truly needed for the first time. If you use Flow or TypeScript, you can also give `getObserver()` a non-nullable type for convenience.
 
 
-## Some misconception concept
+## Some Misconception Concept
 the `IntersectionObserver` specification does not provide a direct way to check the values of observed entries or to retrieve a list of observed targets. **The IntersectionObserver API is designed to provide notifications when observed targets intersect or stop intersecting with the root element.**
 
 When you call observer.observe(targetElement), the observer will start monitoring the specified targetElement for intersection changes. The observer's callback function will be triggered whenever the intersection status of the observed element changes.
@@ -76,3 +76,18 @@ When you call observer.observe(targetElement), the observer will start monitorin
 On the other hand, when you call observer.unobserve(targetElement), the observer will stop monitoring the specified targetElement. The observer's callback will no longer be triggered for that particular element.
 
 If you need to keep track of the observed entries or their intersection status, you can maintain your own data structure or variables within your code. For example, you can use an array or a map to store the observed elements and their corresponding intersection status. Then, within the callback function, you can update the values in your data structure accordingly.
+
+## IntersectionObserver vs Event Emitter 
+
+Intersection Observer:
+- The Intersection Observer API provides a built-in mechanism for observing changes in the intersection of DOM elements with the viewport or other elements.
+- It is specifically designed for tracking visibility and intersection changes, making it suitable for scenarios like infinite scrolling, lazy loading, or tracking element visibility.
+- The Intersection Observer is efficient as it uses a single callback function to handle multiple observed targets simultaneously.
+- It offers options like root element, root margin, and threshold for defining the observation scope and triggering conditions.
+- The Intersection Observer is well-suited for scenarios where you need to react to changes in the visibility or intersection of elements without relying on explicit events.
+
+Event Emitter:
+- The Event Emitter pattern involves a central event emitter that allows components or modules to subscribe to events and receive notifications when those events occur.
+- It is a more general-purpose approach for creating reactive behavior in applications, allowing for decoupled communication between different parts of the application.
+- With an Event Emitter, you have more flexibility in defining custom events and their payloads, enabling you to react to a wide range of changes and actions.
+- It can be useful for scenarios where you want to create custom reactive behavior beyond element visibility, such as inter-component communication, global state management, or custom event-driven workflows.
