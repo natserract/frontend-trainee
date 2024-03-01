@@ -7,6 +7,7 @@ import StateMachinePlayground from "./components/state-machine/playground";
 import ReactRouterPlayground from "./components/react-router/playground";
 import LocalizationPlayground from "./components/localization/playground";
 import RecursiveComponentPlayground from "./components/recursive-component/playground";
+import IntersectionObserverPlayground from "./components/intersection-observer/playground";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ReactRouterPlayground />
       <LocalizationPlayground />
       <RecursiveComponentPlayground />
+      <IntersectionObserverPlayground />
     </>
   );
 }
