@@ -11,3 +11,6 @@
 - Lazy load, Code Splitting: hanya load komponen yg dibutuhkan React.lazy,
 - Use CDN
 - Server Side Rendering/SSG:
+
+## Additional Reading
+- RxDB (Reactive Database), Client-side reactive database library https://rxdb.info/

@@ -31,3 +31,5 @@ Remember that while event emitters can be powerful, it's important to use them j
 ## Additional reading:
 - https://dawchihliou.github.io/articles/event-bus-for-react
 - https://www.youtube.com/watch?v=-MlXwb42nKo&t=417s
+- Event sourcing pattern https://microservices.io/patterns/data/event-sourcing.html
+

@@ -17,3 +17,4 @@
 - [x] [Micro Frontend](src/components/micro-frontend)
 - [x] [React - Recursive Component](src/components/recursive-component)
 - [x] [Intersection Observer](src/components/intersection-observer)
+- [x] [React - Polymorphic Component](src/components/polymorphic-component)

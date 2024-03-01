@@ -8,6 +8,7 @@ import ReactRouterPlayground from "./components/react-router/playground";
 import LocalizationPlayground from "./components/localization/playground";
 import RecursiveComponentPlayground from "./components/recursive-component/playground";
 import IntersectionObserverPlayground from "./components/intersection-observer/playground";
+import PolymorphicComponentPlayground from "./components/polymorphic-component/playground";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <LocalizationPlayground />
       <RecursiveComponentPlayground />
       <IntersectionObserverPlayground />
+      <PolymorphicComponentPlayground />
     </>
   );
 }
