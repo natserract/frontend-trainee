@@ -76,7 +76,7 @@ function InfiniteScroll() {
 
     if (observer && observerTargetRef.current) {
       // Start observing element  observer.observe()
-      // Intersecting `LoadMoreBtn` from ref
+      // Intersecting `LoadMore` from ref
       observer.observe(observerTargetRef.current);
     }
   }, [getObserver, handleObserver]);
