@@ -12,6 +12,7 @@ import RecursiveComponentPlayground from "./components/recursive-component/playg
 import IntersectionObserverPlayground from "./components/intersection-observer/playground";
 import PolymorphicComponentPlayground from "./components/polymorphic-component/playground";
 import SyncExternalStorePlayground from "./components/sync-external-store/playground";
+import UploadPlayground from "./components/upload/playground";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ function App() {
       <IntersectionObserverPlayground />
       <PolymorphicComponentPlayground />
       <SyncExternalStorePlayground />
+      <UploadPlayground />
     </QueryClientProvider>
   );
 }
