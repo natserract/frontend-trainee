@@ -1,3 +1,5 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
 import "./App.css";
 import { HigherOrderComponentPlayground } from "./components/higher-order-component/playground";
 import { ContextPlayground } from "./components/context/playground";
@@ -11,9 +13,11 @@ import IntersectionObserverPlayground from "./components/intersection-observer/p
 import PolymorphicComponentPlayground from "./components/polymorphic-component/playground";
 import SyncExternalStorePlayground from "./components/sync-external-store/playground";
 
+const queryClient = new QueryClient();
+
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <HigherOrderComponentPlayground />
       <ContextPlayground />
       <DataFetchingPlayground />
@@ -25,7 +29,7 @@ function App() {
       <IntersectionObserverPlayground />
       <PolymorphicComponentPlayground />
       <SyncExternalStorePlayground />
-    </>
+    </QueryClientProvider>
   );
 }
 

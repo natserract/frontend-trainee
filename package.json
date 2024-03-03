@@ -14,6 +14,7 @@
   "dependencies": {
     "@cassiozen/usestatemachine": "^1.0.1",
     "@lingui/react": "^4.7.1",
+    "@tanstack/react-query": "^5.24.6",
     "eventemitter3": "^5.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
