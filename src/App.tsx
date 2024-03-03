@@ -9,6 +9,7 @@ import LocalizationPlayground from "./components/localization/playground";
 import RecursiveComponentPlayground from "./components/recursive-component/playground";
 import IntersectionObserverPlayground from "./components/intersection-observer/playground";
 import PolymorphicComponentPlayground from "./components/polymorphic-component/playground";
+import SyncExternalStorePlayground from "./components/sync-external-store/playground";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <RecursiveComponentPlayground />
       <IntersectionObserverPlayground />
       <PolymorphicComponentPlayground />
+      <SyncExternalStorePlayground />
     </>
   );
 }
