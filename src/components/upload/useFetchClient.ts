@@ -3,7 +3,6 @@ import { useRef, useEffect, useMemo } from "react";
 
 const fetchClient = () => {
   const instance = axios.create({
-    baseURL: "https://",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",

@@ -1,5 +1,7 @@
 ## Using the AbortController in a React application can provide several benefits:
 
+> An abort signal is like a little event emitter, you can trigger it (through the AbortController), and every request started with this signal will be notified and cancelled.
+> 
 1. **Cancellation of Requests:** The AbortController allows you to cancel asynchronous operations, such as network requests, by calling the `abort()` method on the controller. This is useful in scenarios where you want to cancel a request that is no longer needed, such as when a user navigates away from a page or when a component is unmounted.
 
 2. **Preventing Memory Leaks:** When a component is unmounted or no longer needed, ongoing asynchronous operations, such as network requests, can cause memory leaks if they are not properly cleaned up. By using the AbortController, you can cancel those operations and ensure that resources are released, preventing memory leaks and improving the performance of your application.

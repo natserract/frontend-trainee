@@ -20,3 +20,4 @@
 - [x] [React - Polymorphic Component](src/components/polymorphic-component)
 - [x] [React - Sync External Store](src/components/sync-external-store)
 - [x] [Upload Files - From Scratch](src/components/upload)
+- [x] [React - Batched Updates](src/components/batched-updates)
