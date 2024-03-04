@@ -13,6 +13,7 @@ import IntersectionObserverPlayground from "./components/intersection-observer/p
 import PolymorphicComponentPlayground from "./components/polymorphic-component/playground";
 import SyncExternalStorePlayground from "./components/sync-external-store/playground";
 import UploadPlayground from "./components/upload/playground";
+import LazyRenderingPlayground from "./components/lazy-rendering/playground";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ function App() {
       <PolymorphicComponentPlayground />
       <SyncExternalStorePlayground />
       <UploadPlayground />
+      <LazyRenderingPlayground />
     </QueryClientProvider>
   );
 }

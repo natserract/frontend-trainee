@@ -21,3 +21,4 @@
 - [x] [React - Sync External Store](src/components/sync-external-store)
 - [x] [Upload Files - From Scratch](src/components/upload)
 - [x] [React - Batched Updates](src/components/batched-updates)
+- [x] [Lazy Rendering - By  Yield Generator](src/components/lazy-rendering)
