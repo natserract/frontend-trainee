@@ -35,6 +35,18 @@ A message channel is meant to establish a bidirectional communication between tw
 
 - Flexibility: MessageChannel allows you to establish communication channels between any two JavaScript execution contexts, not just between the main thread and web workers. You can use it to communicate between different web workers, iframes, or even between a web worker and a service worker.
 
+## How to keep a worker thread process running when a page is refreshed?
+To keep a worker thread process running when a page is refreshed, you'll need to persist the state of the worker and its associated data before the page is refreshed, and then restore that state after the page is reloaded. Here's a basic outline of how you can achieve this:
+
+1. Save State Before Refresh:
+   - When the page is about to be refreshed (e.g., in response to the beforeunload event), send a message to the worker to save its current state. 
+   - The worker should handle this message by saving its state to some form of persistent storage, such as **IndexedDB** or **localStorage**.
+
+2. Restore State After Refresh:
+   - When the page is reloaded, create a new worker instance. 
+   - When the new worker is initialized, send a message to it to request the previously saved state. 
+   - The worker should handle this message by retrieving its saved state from storage and resuming its processing from where it left off.
+
 ## Additional Reading
 - WASM with Web Worker in Rust https://github.com/code-jugglers/brain-games-rust/
 - https://www.honeybadger.io/blog/javascript-web-workers-multithreading/
