@@ -9,3 +9,4 @@
 - https://react.dev/reference/react/useSyncExternalStore#subscribing-to-a-browser-api
 - https://github.com/reactwg/react-18/discussions/86
 - https://julesblom.com/writing/usesyncexternalstore
+- https://tkdodo.eu/blog/avoiding-hydration-mismatches-with-use-sync-external-store
