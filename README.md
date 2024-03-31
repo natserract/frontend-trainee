@@ -3,6 +3,7 @@
 Curated list of practical and techniques for React, Front-end development
 
 ## Running
+
 ```shell
 yarn turbo run dev #or
 yarn turbo run dev --filter=<task_name>
@@ -29,6 +30,7 @@ yarn turbo run dev --filter=<task_name>
 - [x] [React - Sync External Store](apps/sync-external-store)
 - [x] [Upload Files - From Scratch](apps/upload)
 - [x] [React - Batched Updates](apps/batched-updates)
-- [x] [Lazy Rendering - By  Yield Generator](apps/lazy-rendering)
+- [x] [Lazy Rendering - By Yield Generator](apps/lazy-rendering)
 - [x] [Web Worker](apps/web-worker)
 - [x] [React - Portal](apps/portal)
+- [x] [Refine UI, GraphQL](https://github.com/natserract/cognite)
