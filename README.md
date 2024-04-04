@@ -35,3 +35,4 @@ yarn turbo run dev --filter=<task_name>
 - [x] [React - Portal](apps/portal)
 - [x] [Refine UI, GraphQL](https://github.com/natserract/cognite)
 - [x] [AWS Amplify React](https://github.com/natserract/aws-amplify-react-auth/tree/main)
+- [x] [Pokedex - NextJS 14 SSR](https://github.com/natserract/pokedex) 
