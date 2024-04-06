@@ -33,6 +33,4 @@ yarn turbo run dev --filter=<task_name>
 - [x] [Lazy Rendering - By Yield Generator](apps/lazy-rendering)
 - [x] [Web Worker](apps/web-worker)
 - [x] [React - Portal](apps/portal)
-- [x] [Refine UI, GraphQL](https://github.com/natserract/cognite)
-- [x] [React - AWS Amplify](https://github.com/natserract/aws-amplify-react-auth/tree/main)
-- [x] [NextJS 14 - Pokedex](https://github.com/natserract/pokedex) 
+- [x] [Pokedex in NextJS 14](https://github.com/natserract/pokedex) 
