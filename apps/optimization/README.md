@@ -4,7 +4,7 @@
     - Set di header network
   ```ts
    // Instructing the Vercel edge to cache the file
-  res.setHeader('Cache-control', 'stale-while-revalidate, s-maxage=3600') 
+  res.setHeader('Cache-control', 'stale-while-revalidate, s-maxage=3600')
   ```
     - OR redis
 - Compress image to webp
@@ -13,5 +13,5 @@
 - Server Side Rendering/SSG:
 
 ## Additional Reading
-- https://natserract.vercel.app/post/react-optimization
+- https://engineering-natserract.vercel.app/posts/react-optimization
 - Caching - RxDB (Reactive Database), Client-side reactive database library https://rxdb.info/
