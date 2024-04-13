@@ -1,12 +1,12 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { routes } from "./Routes";
 import "./App.css";
 
+const router = createBrowserRouter(routes);
+
 function App() {
-  return (
-    <div>
-      <h1>Hello, World!</h1>
-      <button onClick={() => console.log("Button clicked!")}>Click me</button>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
