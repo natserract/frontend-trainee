@@ -128,7 +128,7 @@ const Component = () => {
 
 For those of you, who hate re-inventing the wheel or just prefer libraries for already solved problems, there is a nice one that implements a flexible ErrorBoundary component and has a few useful utils similar to those described above: [GitHub - bvaughn/react-error-boundary](https://github.com/bvaughn/react-error-boundary)
 
-This documentation copied from https://www.developerway.com/posts/how-to-handle-errors-in-react#part6
+This documentation is a summary from https://www.developerway.com/posts/how-to-handle-errors-in-react#part6
 
 ## Additional Reading
 
