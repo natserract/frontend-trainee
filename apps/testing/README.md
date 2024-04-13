@@ -47,15 +47,13 @@ yarn test:front
 - Cross-Browser and Cross-Device Compatibility
 - Etc
 
-## Cypress
+## Tasks:
 
-E2E Testing is a technique that tests your app from the web browser through to the back end of your application, as well as testing integrations with third-party APIs and services. These types of tests are great at making sure your entire app is functioning as a cohesive whole.
-
-Cypress runs end-to-end tests the same way users interact with your app by using a real browser, visiting URLs, viewing content, clicking on links and buttons, etc. Testing this way helps ensure your tests and the user's experience are the same.
-
-### Tasks:
-
-- []
+- Smoke Testing
+- End-to-End Testing
+- Functional Testing
+- Integration Testing
+- UI Testing
 
 ## TDD
 

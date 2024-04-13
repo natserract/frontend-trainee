@@ -32,5 +32,5 @@
       "@tests/*": ["./tests/*"]
     }
   },
-  "include": ["src", "./jest-setup.js"]
+  "include": ["src"]
 }

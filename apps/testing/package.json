@@ -15,7 +15,8 @@
     "test:e2e:run": "start-server-and-test dev http://localhost:5173/ cy:run",
     "test:front": "cross-env IS_EE=true jest",
     "test:front:coverage": "cross-env IS_EE=true jest --coverage",
-    "test:front:watch": "cross-env IS_EE=true jest --watch"
+    "test:front:watch": "cross-env IS_EE=true jest --watch",
+    "test:types:check": "tsc --project cypress/tsconfig.json --noEmit"
   },
   "dependencies": {
     "@cassiozen/usestatemachine": "^1.0.1",
