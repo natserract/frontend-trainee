@@ -8,11 +8,11 @@ describe("smoke tests", () => {
     cy.get("main").children().should("have.length.gte", 1);
 
     const nav = cy.getByTestId("navigation");
-    const navLink = nav.get("a").contains("Login");
+    const navLink = nav.get("a").contains("Contact");
     navLink.click();
 
-    // Expects the URL to contain login.
-    cy.url().should("include", "/login");
+    // Expects the URL to contain 'contact'.
+    cy.url().should("include", "/contact");
 
     nav.getByTestId("brand").click();
     nav.getByTestId("brand").should("have.text", LOGO_TEXT);

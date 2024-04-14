@@ -18,7 +18,7 @@ function Navbar() {
           </li>
 
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

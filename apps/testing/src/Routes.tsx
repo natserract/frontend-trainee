@@ -5,7 +5,7 @@ import { Layout } from "./components/layout";
 
 // Pages
 import HomePage from "./pages/Home";
-import LoginPage from "./pages/Login";
+import ContactPage from "./pages/Contact";
 
 export const routes: RouteObject[] = [
   {
@@ -17,8 +17,8 @@ export const routes: RouteObject[] = [
         Component: HomePage,
       },
       {
-        path: "/login",
-        Component: LoginPage,
+        path: "/contact",
+        Component: ContactPage,
       },
     ],
   },
