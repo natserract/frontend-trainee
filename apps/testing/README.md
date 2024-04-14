@@ -30,6 +30,12 @@ yarn test:e2e
 yarn test:front
 ```
 
+**Launches storybook**
+
+```bash
+yarn storybook
+```
+
 ## Tools
 
 - [Jest](https://jestjs.io/)
