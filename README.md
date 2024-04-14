@@ -35,3 +35,4 @@ yarn turbo run dev --filter=<task_name>
 - [x] [React - Portal](apps/portal)
 - [x] [Pokedex in NextJS 14](https://github.com/natserract/pokedex)
 - [x] [React - Error Handling, Properly](apps/react-error-handling)
+- [] [Testing](apps/testing)
