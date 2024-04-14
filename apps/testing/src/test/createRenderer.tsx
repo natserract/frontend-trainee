@@ -23,10 +23,10 @@ interface ProvidersProps {
   children: React.ReactNode;
 }
 
-// (e.g: React Query provider, IntlProvider, etc)
-const Providers = ({ children }: ProvidersProps) => {
+// (e.g: React Query provider, Redux, IntlProvider, etc)
+function Providers({ children }: ProvidersProps) {
   return <>{children}</>;
-};
+}
 
 function render(
   element: React.ReactElement,

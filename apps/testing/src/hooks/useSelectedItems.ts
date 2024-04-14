@@ -37,9 +37,7 @@ export default function useSelectedItems<T extends object>() {
     });
   }, []);
 
-  const clear = useCallback(() => {
-    setSelectedItems(new Map());
-  }, []);
+  const clear = () => setSelectedItems(new Map());
 
   return {
     isSelected,

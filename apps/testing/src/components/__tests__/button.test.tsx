@@ -1,4 +1,6 @@
-import { createRenderer } from "../../test/utils";
+import { act } from "@testing-library/react";
+
+import { createRenderer } from "../../test";
 import { Button } from "../button";
 
 describe("<Button />", () => {
@@ -7,5 +9,10 @@ describe("<Button />", () => {
   it("should have text or children", () => {
     const { getByTestId } = render(<Button text="Click Me!" />);
     expect(getByTestId("root")).toHaveTextContent("Click Me!");
+
+    const button = getByTestId("root");
+    act(() => {
+      button.focus();
+    });
   });
 });

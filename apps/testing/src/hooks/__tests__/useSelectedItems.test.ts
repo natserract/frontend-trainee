@@ -1,8 +1,10 @@
-import { renderHook, waitFor } from "@testing-library/react";
+import { createRenderer } from "../../test";
 
 import useSelectedItems from "../useSelectedItems";
 
 describe("useSelectedItems", () => {
+  const { renderHook } = createRenderer();
+
   test("Returns", async () => {
     const { result } = renderHook(() => useSelectedItems());
   });
