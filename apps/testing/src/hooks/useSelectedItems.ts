@@ -1,20 +1,21 @@
 import { useCallback, useMemo, useState } from "react";
 
-export default function useSelectedItems<T extends object>() {
-  const [selectedItems, setSelectedItems] = useState<Map<string | number, T>>(
-    new Map(),
-  );
+export default function useSelectedItems<
+  T extends object,
+  K extends string | number,
+>() {
+  const [selectedItems, setSelectedItems] = useState<Map<K, T>>(new Map());
 
   const selectedItemsLen = useMemo(() => selectedItems.size, [selectedItems]);
 
   const isSelected = useCallback(
-    (key: string) => {
+    (key: K) => {
       return selectedItems.has(key);
     },
     [selectedItems],
   );
 
-  const updateSelectedItem = useCallback((data: T, key: string | number) => {
+  const updateSelectedItem = useCallback((data: T, key: K) => {
     setSelectedItems((items) => {
       const updatedItems = new Map(items);
 
@@ -28,7 +29,7 @@ export default function useSelectedItems<T extends object>() {
     });
   }, []);
 
-  const removeSelectedItem = useCallback((key: string | number) => {
+  const removeSelectedItem = useCallback((key: K) => {
     setSelectedItems((items) => {
       const updatedItems = new Map(items);
       updatedItems.delete(key);
