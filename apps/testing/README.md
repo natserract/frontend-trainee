@@ -40,6 +40,7 @@ yarn storybook
 
 - [Jest](https://jestjs.io/)
 - [Cypress](https://www.cypress.io/)
+- [MSW](https://mswjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - [Story Book](https://storybook.js.org/)
 
@@ -61,6 +62,23 @@ yarn storybook
 - Integration Testing
 - UI Testing
 
+## Notes
+
+### MSW
+
+[msw](https://mswjs.io/) creates a mock server which intercepts all network requests and return the handlers (including stub responses) defined by you.
+
+**The problems msw solved:**
+Presently, when we run our test, we are hitting the actual API endpoint and waiting for the API to be done. This is not ideal. It can lead to slow and fragile tests, and adds an external network dependency to these unit tests. Instead, we will create a mock to model the exact API interaction.
+
+Any unit test, at any level of the component tree, that triggers a call to GET /api (defined in msw handlers) will operate without any further configuration or thought. The API call will always be handled by the MSW server returning our standard handler's response. If need be, we can easily override the standard response with a unique handler for any specific test. Furthermore, if, for some reason, it would be desirable to mock the service layer for a given test suite that option still exists. The service mock would take precedence and no actual network request would be made. Using the MSW mock server, we gain the benefit of centrally defined API mocks that require little or no setup within our tests without losing any ability to fall back to other mocking techniques if they would be useful.
+
+### What fixtures are?
+
+Fixture refers to a set of predefined data or a specific state that is used as input for testing a component, module, or system. It is a known and controlled set of data that represents a particular scenario or condition.
+
+Fixtures are commonly used to provide consistent and predictable test environments. They help ensure that the tests are not affected by external factors and produce reliable and reproducible results. Fixtures can be used to set up initial data, simulate different states, or provide mock data for API responses.
+
 ## TDD
 
 TDD is a blend of all three: design, development, and testing. It’s an all-in-one methodology that enables developers to design simple, clean, and tested code. It’s a way to incrementally develop our software and comprehensively test all our business logic. It’s the gold standard way of producing quality software, incorporating best coding and design practices.
@@ -77,3 +95,4 @@ TDD is a blend of all three: design, development, and testing. It’s an all-in-
 
 - https://craftbettersoftware.com/p/why-tdd-is-a-non-negotiable
 - https://startup-cto.net/tdd-in-a-react-frontend/
+- https://www.denniskortsch.com/blog/develop-test-react-apps-react-query-msw-react-testing-library

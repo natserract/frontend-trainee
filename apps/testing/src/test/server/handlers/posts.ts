@@ -1,4 +1,4 @@
-import { http, delay, HttpResponse, PathParams, DefaultBodyType } from "msw";
+import { http, HttpResponse, PathParams, DefaultBodyType } from "msw";
 
 import { API_HOST } from "../../../config";
 import type { Post } from "../../../features/posts/types/models";
@@ -8,10 +8,10 @@ import * as postsDB from "../../data/posts";
 export const postsHandlers = [
   http.get<PathParams, DefaultBodyType, Post[] | { message: string }>(
     `${API_HOST}/posts`,
-    async () => {
-      try {
-        await delay(1000);
+    async ({ request }) => {
+      console.debug("Handler", request.method, request.url);
 
+      try {
         const result = await postsDB.readMany();
         return HttpResponse.json(result);
       } catch (error: any) {
