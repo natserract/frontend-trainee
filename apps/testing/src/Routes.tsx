@@ -4,8 +4,9 @@ import type { RouteObject } from "react-router-dom";
 import { Layout } from "./components/layout";
 
 // Pages
-import HomePage from "./pages/Home";
-import ContactPage from "./pages/Contact";
+import HomePage from "./features/home/routes/Home";
+import ContactPage from "./features/contact/routes/Contact";
+import PostsPage from "./features/posts/routes/Posts";
 
 export const routes: RouteObject[] = [
   {
@@ -19,6 +20,10 @@ export const routes: RouteObject[] = [
       {
         path: "/contact",
         Component: ContactPage,
+      },
+      {
+        path: "/posts",
+        Component: PostsPage,
       },
     ],
   },

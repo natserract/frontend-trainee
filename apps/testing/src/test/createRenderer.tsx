@@ -7,6 +7,7 @@ import {
   RenderHookResult,
 } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 export interface RenderConfiguration {
   renderOptions?: RTLRenderOptions;
@@ -25,7 +26,17 @@ interface ProvidersProps {
 
 // (e.g: React Query provider, Redux, IntlProvider, etc)
 function Providers({ children }: ProvidersProps) {
-  return <>{children}</>;
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        retry: false,
+      },
+    },
+  });
+
+  return (
+    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+  );
 }
 
 function render(
