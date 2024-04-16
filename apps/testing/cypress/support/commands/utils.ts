@@ -4,6 +4,7 @@ declare global {
   namespace Cypress {
     interface Chainable {
       getByTestId(...testids: unknown[]): Chainable;
+      assertHome(): Chainable;
     }
   }
 }
@@ -14,4 +15,8 @@ Cypress.Commands.add("getByTestId", (...testids) => {
     .join(" ");
 
   return cy.get(selector);
+});
+
+Cypress.Commands.add("assertHome", () => {
+  return cy.url().should("eq", `${Cypress.config().baseUrl}/`);
 });
