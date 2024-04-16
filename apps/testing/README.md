@@ -62,6 +62,15 @@ yarn storybook
 - Integration Testing
 - UI Testing
 
+## Test Suites
+
+- [smoke.spec.ts](apps/testing/cypress/e2e/smoke.spec.ts)
+- [useSelectedItems.test](apps/testing/src/hooks/useSelectedItems.test.ts)
+- [get.test](apps/testing/src/features/posts/api/get.test.tsx)
+- [string-formatting.test](apps/testing/src/utils/string-formatting.test.ts)
+- [App.test](apps/testing/src/App.test.tsx)
+- [button.test](apps/testing/src/components/button/button.test.tsx)
+
 ## Notes
 
 ### MSW
