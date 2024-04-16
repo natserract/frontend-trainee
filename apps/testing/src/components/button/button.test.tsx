@@ -1,7 +1,7 @@
 import { act } from "@testing-library/react";
 
 import { createRenderer } from "../../test";
-import { Button } from "../button";
+import { Button } from "./button";
 
 describe("<Button />", () => {
   const { render } = createRenderer();

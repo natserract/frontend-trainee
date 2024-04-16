@@ -3,7 +3,7 @@ import type { JestConfigWithTsJest } from "ts-jest";
 const config: JestConfigWithTsJest = {
   displayName: "UI Core",
   roots: ["<rootDir>/src"],
-  testMatch: ["**/__tests__/**/*.{js,ts,jsx,tsx}"],
+  testMatch: ["**/*.test.{js,ts,jsx,tsx}"],
   testEnvironment: "jsdom",
   /* Tells jest to ignore duplicated manual mock files, such as index.js */
   modulePathIgnorePatterns: [".*__mocks__.*"],

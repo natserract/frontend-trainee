@@ -1,6 +1,6 @@
-import { createRenderer } from "../../test";
+import { createRenderer } from "../test";
 
-import useSelectedItems from "../useSelectedItems";
+import useSelectedItems from "./useSelectedItems";
 
 describe("useSelectedItems", () => {
   const { renderHook } = createRenderer();
