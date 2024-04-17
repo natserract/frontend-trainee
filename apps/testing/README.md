@@ -118,3 +118,4 @@ TDD is a blend of all three: design, development, and testing. It’s an all-in-
 - https://startup-cto.net/tdd-in-a-react-frontend/
 - https://www.denniskortsch.com/blog/develop-test-react-apps-react-query-msw-react-testing-library
 - https://medium.com/javascript-journal-unlocking-project-potential/demystifying-jest-functions-mock-spyon-and-fn-a312fafb46b9
+- TDD the way of thinking https://medium.com/@iamjuliooo/test-driven-development-tdd-is-a-way-of-thinking-part-1-a8207d61cfe4
