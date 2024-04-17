@@ -89,7 +89,18 @@ Fixture refers to a set of predefined data or a specific state that is used as i
 
 Fixtures are commonly used to provide consistent and predictable test environments. They help ensure that the tests are not affected by external factors and produce reliable and reproducible results. Fixtures can be used to set up initial data, simulate different states, or provide mock data for API responses.
 
-## TDD
+### Mocking
+
+Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. A dependency can be anything your subject depends on, but it is typically a module that the subject imports.
+
+**Mocking Modules and Functions**
+There are three main types of module and function mocking in Jest:
+
+- `jest.fn`: Mock a function
+- `jest.mock`: Mock a module
+- `jest.spyOn`: Spy or mock a function
+
+### TDD
 
 TDD is a blend of all three: design, development, and testing. It’s an all-in-one methodology that enables developers to design simple, clean, and tested code. It’s a way to incrementally develop our software and comprehensively test all our business logic. It’s the gold standard way of producing quality software, incorporating best coding and design practices.
 
@@ -106,3 +117,4 @@ TDD is a blend of all three: design, development, and testing. It’s an all-in-
 - https://craftbettersoftware.com/p/why-tdd-is-a-non-negotiable
 - https://startup-cto.net/tdd-in-a-react-frontend/
 - https://www.denniskortsch.com/blog/develop-test-react-apps-react-query-msw-react-testing-library
+- https://medium.com/javascript-journal-unlocking-project-potential/demystifying-jest-functions-mock-spyon-and-fn-a312fafb46b9

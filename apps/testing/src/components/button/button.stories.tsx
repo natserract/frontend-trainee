@@ -5,28 +5,21 @@ import { Button } from "./button";
 
 export default {
   component: Button,
-  argTypes: {
-    text: { control: "Click Me!" },
-  },
   title: "components/button",
 } satisfies Meta<typeof Button>;
 
 type ButtonProps = React.ComponentProps<typeof Button>;
 
-const generateProps = ({
-  text = "Click Me!",
-  onClick = () => void null,
-}: ButtonProps) => ({
-  text,
+const generateProps = ({ onClick = () => void null }: ButtonProps) => ({
   onClick,
 });
 
-export function Basic({ text, children, onClick }: ButtonProps) {
+export function Basic({ children, onClick }: ButtonProps) {
   if (children) {
     return <Button onClick={onClick}>{children}</Button>;
   }
 
-  return <Button text={text} onClick={onClick} />;
+  return <Button onClick={onClick}>{children}</Button>;
 }
 
-Basic.args = generateProps({ text: "Click Me!", onClick: fn() });
+Basic.args = generateProps({ onClick: fn(), children: "Click Me!" });
