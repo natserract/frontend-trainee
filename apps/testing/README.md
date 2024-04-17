@@ -62,7 +62,7 @@ yarn storybook
 - Integration Testing
 - UI Testing
 
-## Test Suites
+## Test Suites Related Files
 
 - [smoke.spec.ts](cypress/e2e/smoke.spec.ts)
 - [useSelectedItems.test](src/hooks/useSelectedItems.test.ts)
@@ -70,6 +70,7 @@ yarn storybook
 - [string-formatting.test](src/utils/string-formatting.test.ts)
 - [App.test](src/App.test.tsx)
 - [button.test](src/components/button/button.test.tsx)
+- [Test Utils](src/test)
 
 ## Notes
 
