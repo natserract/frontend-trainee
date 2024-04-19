@@ -101,6 +101,7 @@ There are three main types of module and function mocking in Jest:
 - `jest.spyOn`: Spy or mock a function
 
 ### TDD
+![photo_2024-04-19 16 44 46](https://github.com/natserract/frontend-trainee/assets/31182611/41825e92-088a-4d8a-b693-14dc544e5075)
 
 TDD is a blend of all three: design, development, and testing. It’s an all-in-one methodology that enables developers to design simple, clean, and tested code. It’s a way to incrementally develop our software and comprehensively test all our business logic. It’s the gold standard way of producing quality software, incorporating best coding and design practices.
 
