@@ -2,6 +2,8 @@
 
 > The more your tests resemble the way your software is used, the more confidence they can give you.
 
+![2024-05-03 14 06 56](https://github.com/natserract/frontend-trainee/assets/31182611/87da35fe-39c3-4afc-b2b7-702992d721e8)
+
 You want to write maintainable tests that give you high confidence that your components are working for your users. As a part of this goal, you want your tests to avoid including implementation details so refactors of your components (changes to implementation but not functionality) don't break your tests and slow you and your team down.
 
 ## Running
