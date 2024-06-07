@@ -36,4 +36,5 @@ yarn turbo run dev --filter=<task_name>
 - [x] [Pokedex in NextJS 14](https://github.com/natserract/pokedex)
 - [x] [React - Error Handling, Properly](apps/react-error-handling)
 - [x] [Testing](apps/testing)
-- [x] [Benchmarking](https://github.com/natserract/perf-cost) 
+- [x] [Benchmarking](https://github.com/natserract/perf-cost)
+- [x] [CI/CD pipeline](https://github.com/natserract/frontend-automation) 
