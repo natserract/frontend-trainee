@@ -52,6 +52,7 @@ To keep a worker thread process running when a page is refreshed, you'll need to
 - https://www.honeybadger.io/blog/javascript-web-workers-multithreading/
 - Message channel https://javascript.plainenglish.io/message-channels-f94de3488b1a
 - https://github.com/alesgenova/post-me
+- Tiny webworker that doesn't need an external file to run  https://github.com/franciscop/uwork
 - https://github.com/deebloo/things-you-can-do-in-a-web-worker
 - https://trezy.com/blog/loading-images-with-web-workers
 - Comlink https://davidea.st/articles/comlink-simple-web-worker/#workers-are-brilliant
